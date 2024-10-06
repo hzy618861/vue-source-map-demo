@@ -6,7 +6,7 @@ const getSourceMap = async (url: string) => {
     return res
 }
 const findCodeBySourceMap = async (stackFrame: any) => {
-    const map = await getSourceMap(stackFrame.filename + '.map')
+    const map = await getSourceMap(stackFrame.fileName + '.map')
     const fileContent = map.data
     // 解析map文件
     const consumer = await new sourceMap.SourceMapConsumer(fileContent)

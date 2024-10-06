@@ -14,6 +14,7 @@ app.use(createPinia())
 app.use(router)
 app.config.errorHandler = (err,vm) => {
     const errorStack = ErrorStackParser.parse(err)
+    debugger
     findCodeBySourceMap(errorStack[0])
 }
 
