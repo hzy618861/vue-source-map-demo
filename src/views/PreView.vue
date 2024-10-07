@@ -1,7 +1,7 @@
 <template>
   <div class="pre-code">
     <div class="error-detail">
-      <pre class="error-code" v-html=""></pre>
+      <pre class="error-code" v-html="origin"></pre>
     </div>
   </div>
 </template>
@@ -26,7 +26,7 @@ export default {
                   <div class="code-line ${i+1 == line ? 'heightlight' : ''}">${content}</div>
                 `)
            }
-           rerurn newLines.join('')
+           return newLines.join('')
         },
         encodeHTML(str) {
             if(!str || str.length === 0) return ''
