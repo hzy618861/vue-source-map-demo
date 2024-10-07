@@ -54,7 +54,7 @@
 import sourceMap from 'source-map-js'
 import { ElMessage } from "element-plus";
 import { onMounted, ref } from "vue";
-import PreView from "../components/PreView.vue";
+import PreView from "./PreView.vue";
 const js_error = ref(null);
 const isError = ref(false);
 const dialogVisible = ref(false);
