@@ -45,7 +45,7 @@ export default {
     overflow: hidden;
     font-family: consolas, monospace;
     word-wrap: normal;
-    list-height: 1.0;
+    line-height: 1.0;
 }
 .code-line {
     padding: 4px;

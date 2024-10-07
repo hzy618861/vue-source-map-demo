@@ -113,6 +113,7 @@ function sourceMapUpload(file) {
        ElMessage.error("sourceMap文件解析失败");
      }
   };
+  return false
 }
 </script>
 
