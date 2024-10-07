@@ -1,2 +1,0 @@
-import{_ as i,c as a,a as o,b as s,o as p,r as d}from"./index-CGQ7-d1l.js";const l={},c={class:"about"};function f(e,r,E,v,$,g){const n=d("el-divider");return p(),a("div",c,[o("p",{onClick:r[0]||(r[0]=t=>e.triggerTypeError())},"触发TypeError"),s(n),o("p",{onClick:r[1]||(r[1]=t=>e.triggerReferenceError())},"触发ReferenceError"),s(n),o("p",{onClick:r[2]||(r[2]=t=>e.triggerSyntaxError())},"触发SyntaxError")])}const k=i(l,[["render",f]]);export{k as default};
-//# sourceMappingURL=ErrorView-M6XgvT12.js.map
