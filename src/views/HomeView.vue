@@ -98,7 +98,7 @@ function sourceMapUpload(file) {
   };
   const getSource = async (soureMap, line, column) => {
      try {
-      const consumer = await new sourceMap.SourceMapConsumer(JSON.parse(fileContent));
+      const consumer = await new sourceMap.SourceMapConsumer(JSON.parse(soureMap));
     // 通过报错位置查找对应源文件的名称和行数
       const originalPosition = consumer.originalPositionFor({
         line,
