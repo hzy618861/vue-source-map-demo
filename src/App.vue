@@ -4,10 +4,10 @@ import HelloWorld from './components/HelloWorld.vue'
 import { onMounted } from 'vue'
 
 onMounted(() => {
-  let testNum = null
-  if(testNum.length) {
-     console.log('length')
-  }
+  // let testNum = null
+  // if(testNum.length) {
+  //    console.log('length')
+  // }
 })
 </script>
 
@@ -18,6 +18,8 @@ onMounted(() => {
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/trigger">触发js异常</RouterLink>
+        <RouterLink to="/record">录制</RouterLink>
+        <RouterLink to="/play">回放</RouterLink>
       </nav>
     </div>
   </header>
