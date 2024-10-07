@@ -24,9 +24,7 @@
           </el-col>
         </el-row>
         <el-row :gutter="20">
-             <div v-if="item.original">
-                 {{ item.original }}
-             </div>
+             <PreView :origin="item.original" v-if="item.original"/>
              <div v-else>
                 {{ item.fileName }}
              </div>
@@ -56,6 +54,7 @@
 import sourceMap from 'source-map-js'
 import { ElMessage } from "element-plus";
 import { onMounted, ref } from "vue";
+import PreView from "../components/PreView.vue";
 const js_error = ref(null);
 const isError = ref(false);
 const dialogVisible = ref(false);
